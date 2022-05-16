@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* box-sizing : border box sert à contenir le contenu dans l'écran en fonction des marges*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 100%; /* zoom de base effectué sur l'écran, 100% correspond au zoom de base */
+    line-height: 1.4; /* line-height, c'est l'interligne*/
+    color: #011627;
+    background-color: #fdfffc;
+    text-align: center;
+}
+
+/* Style de tous les titres */
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: 'Changa One', cursive;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: .75em;
+}
+
+p {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+a {
+    color: #e71d36;
+    text-decoration: none;
+}
+
+/***************************************
+ ENTÊTE
+ ****************************************/
+header {
+    background-color: #011627;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header .logo-titre {
+    color: #2ec4b6;
+    font-size: 1.75rem;
+    margin-top: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+header .logo-metier {
+    margin-bottom: 20px;
+}
+
+header nav {
+    text-align: center;
+}
+
+header nav ul {
+    padding: 0;
+    /* list-style-type sert à définir un style de puce, dans le cas de ce document on n'en veut pas donc none*/
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+}
