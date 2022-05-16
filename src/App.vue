@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
-<!--      Liens de page-->
-      <router-link to="/">Accueil</router-link> |
-      <router-link to="/informations">Informations</router-link> |
-      <router-link to="/contact">Contact</router-link>
-    </div>
+    <entete/>
     <router-view/>
+    <pied-de-page/>
   </div>
 </template>
 
 <script>
+import Entete from '@/components/Entete.vue';
+import PiedDePage from '@/components/PiedDePage.vue';
+
 export default {
   name: 'LaureDinateur',
+  components: { PiedDePage, Entete },
 };
 </script>
 
